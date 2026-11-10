@@ -1,0 +1,1794 @@
+{
+  "files": 41,
+  "frame_total": 6631,
+  "frames": {
+    "FIRE.TTM.TT3": 41,
+    "FISHWALK.TTM.TT3": 23,
+    "GFFFOOD.TTM.TT3": 48,
+    "GJCATCH2.TTM.TT3": 62,
+    "GJDIVE.TTM.TT3": 119,
+    "GJGULIVR.TTM.TT3": 473,
+    "GJGULL1.TTM.TT3": 110,
+    "GJHOT.TTM.TT3": 90,
+    "GJLILIPU.TTM.TT3": 101,
+    "GJNAT1.TTM.TT3": 181,
+    "GJNAT3.TTM.TT3": 208,
+    "GJVIS3.TTM.TT3": 203,
+    "GJVIS5.TTM.TT3": 192,
+    "GJVIS5W.TTM.TT3": 135,
+    "GJVIS6.TTM.TT3": 156,
+    "MEANWHIL.TTM.TT3": 50,
+    "MJAMBWLK.TTM.TT3": 275,
+    "MJBATH.TTM.TT3": 201,
+    "MJCOCO.TTM.TT3": 146,
+    "MJCOCO1.TTM.TT3": 125,
+    "MJDIVE.TTM.TT3": 94,
+    "MJFIRE.TTM.TT3": 333,
+    "MJFISH.TTM.TT3": 374,
+    "MJFISHC.TTM.TT3": 257,
+    "MJJOG.TTM.TT3": 225,
+    "MJRAFT.TTM.TT3": 36,
+    "MJREAD.TTM.TT3": 301,
+    "MJSAND.TTM.TT3": 298,
+    "MJTELE.TTM.TT3": 124,
+    "SASKDATE.TTM.TT3": 213,
+    "SBREAKUP.TTM.TT3": 141,
+    "SHARK1.TTM.TT3": 79,
+    "SJGLIMPS.TTM.TT3": 203,
+    "SJLEAVES.TTM.TT3": 152,
+    "SJMSSGE.TTM.TT3": 151,
+    "SJMSUZY.TTM.TT3": 86,
+    "SJWORK.TTM.TT3": 27,
+    "SMDATE.TTM.TT3": 195,
+    "SUZYCITY.TTM.TT3": 99,
+    "THEEND.TTM.TT3": 76,
+    "WOULDBE.TTM.TT3": 228
+  },
+  "counts": {
+    "0x0080": 190,
+    "0x0110": 528,
+    "0x0ff0": 6631,
+    "0x1021": 1148,
+    "0x1051": 456,
+    "0x1061": 41,
+    "0x1101": 5,
+    "0x1111": 611,
+    "0x1121": 61,
+    "0x1201": 75,
+    "0x2002": 217,
+    "0x2012": 52,
+    "0x2022": 152,
+    "0x4004": 52,
+    "0x4204": 38,
+    "0x4214": 60,
+    "0xa002": 63,
+    "0xa054": 1,
+    "0xa064": 1,
+    "0xa0a4": 784,
+    "0xa104": 111,
+    "0xa404": 437,
+    "0xa504": 12546,
+    "0xa524": 2822,
+    "0xa601": 6814,
+    "0xb606": 6,
+    "0xc051": 535,
+    "0xf01f": 40,
+    "0xf02f": 263,
+    "0xf05f": 41
+  },
+  "examples": {
+    "0x1061": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 0,
+        "frame": 0,
+        "op": "0x1061",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 0,
+        "frame": 0,
+        "op": "0x1061",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 0,
+        "frame": 0,
+        "op": "0x1061",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 16,
+        "frame": 0,
+        "op": "0x1061",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 0,
+        "frame": 0,
+        "op": "0x1061",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 16,
+        "frame": 0,
+        "op": "0x1061",
+        "args": [
+          0
+        ]
+      }
+    ],
+    "0xf05f": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 4,
+        "frame": 0,
+        "op": "0xf05f",
+        "args": "JOHNCAST.PAL"
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 4,
+        "frame": 0,
+        "op": "0xf05f",
+        "args": "JOHNCAST.PAL"
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 4,
+        "frame": 0,
+        "op": "0xf05f",
+        "args": "JOHNCAST.PAL"
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 20,
+        "frame": 0,
+        "op": "0xf05f",
+        "args": "JOHNCAST.PAL"
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 4,
+        "frame": 0,
+        "op": "0xf05f",
+        "args": "JOHNCAST.PAL"
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 20,
+        "frame": 0,
+        "op": "0xf05f",
+        "args": "JOHNCAST.PAL"
+      }
+    ],
+    "0xf01f": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 20,
+        "frame": 0,
+        "op": "0xf01f",
+        "args": "ISLETEMP.SCR"
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 20,
+        "frame": 0,
+        "op": "0xf01f",
+        "args": "ISLETEMP.SCR"
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 20,
+        "frame": 0,
+        "op": "0xf01f",
+        "args": "ISLETEMP.SCR"
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 0,
+        "frame": 0,
+        "op": "0xf01f",
+        "args": "ISLETEMP.SCR"
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 20,
+        "frame": 0,
+        "op": "0xf01f",
+        "args": "ISLETEMP.SCR"
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 0,
+        "frame": 0,
+        "op": "0xf01f",
+        "args": "ISLETEMP.SCR"
+      }
+    ],
+    "0x0ff0": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 36,
+        "frame": 0,
+        "op": "0x0ff0",
+        "args": []
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 72,
+        "frame": 1,
+        "op": "0x0ff0",
+        "args": []
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 106,
+        "frame": 2,
+        "op": "0x0ff0",
+        "args": []
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 132,
+        "frame": 3,
+        "op": "0x0ff0",
+        "args": []
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 158,
+        "frame": 4,
+        "op": "0x0ff0",
+        "args": []
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 184,
+        "frame": 5,
+        "op": "0x0ff0",
+        "args": []
+      }
+    ],
+    "0x1111": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 38,
+        "frame": 1,
+        "op": "0x1111",
+        "args": [
+          1
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 74,
+        "frame": 2,
+        "op": "0x1111",
+        "args": [
+          2
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 186,
+        "frame": 6,
+        "op": "0x1111",
+        "args": [
+          13
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 192,
+        "frame": 7,
+        "op": "0x1111",
+        "args": [
+          3
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 306,
+        "frame": 11,
+        "op": "0x1111",
+        "args": [
+          4
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 420,
+        "frame": 15,
+        "op": "0x1111",
+        "args": [
+          5
+        ]
+      }
+    ],
+    "0x1121": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 42,
+        "frame": 1,
+        "op": "0x1121",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 42,
+        "frame": 1,
+        "op": "0x1121",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 42,
+        "frame": 1,
+        "op": "0x1121",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 42,
+        "frame": 1,
+        "op": "0x1121",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 42,
+        "frame": 1,
+        "op": "0x1121",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 42,
+        "frame": 1,
+        "op": "0x1121",
+        "args": [
+          0
+        ]
+      }
+    ],
+    "0x4214": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 46,
+        "frame": 1,
+        "op": "0x4214",
+        "args": [
+          264,
+          210,
+          344,
+          134
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 46,
+        "frame": 1,
+        "op": "0x4214",
+        "args": [
+          88,
+          142,
+          552,
+          208
+        ]
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 46,
+        "frame": 1,
+        "op": "0x4214",
+        "args": [
+          136,
+          111,
+          504,
+          239
+        ]
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 46,
+        "frame": 1,
+        "op": "0x4214",
+        "args": [
+          0,
+          157,
+          640,
+          193
+        ]
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 46,
+        "frame": 1,
+        "op": "0x4214",
+        "args": [
+          96,
+          43,
+          400,
+          295
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 46,
+        "frame": 1,
+        "op": "0x4214",
+        "args": [
+          280,
+          119,
+          360,
+          231
+        ]
+      }
+    ],
+    "0x1051": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 56,
+        "frame": 1,
+        "op": "0x1051",
+        "args": [
+          2
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 652,
+        "frame": 23,
+        "op": "0x1051",
+        "args": [
+          4
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 784,
+        "frame": 28,
+        "op": "0x1051",
+        "args": [
+          3
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 60,
+        "frame": 1,
+        "op": "0x1051",
+        "args": [
+          2
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 82,
+        "frame": 1,
+        "op": "0x1051",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 106,
+        "frame": 1,
+        "op": "0x1051",
+        "args": [
+          1
+        ]
+      }
+    ],
+    "0xf02f": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 60,
+        "frame": 1,
+        "op": "0xf02f",
+        "args": "FLAME.BMP"
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 656,
+        "frame": 23,
+        "op": "0xf02f",
+        "args": "FLURRY.BMP"
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 788,
+        "frame": 28,
+        "op": "0xf02f",
+        "args": "FIRE1.BMP"
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 64,
+        "frame": 1,
+        "op": "0xf02f",
+        "args": "TRUNK.BMP"
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 86,
+        "frame": 1,
+        "op": "0xf02f",
+        "args": "MJFISH1.BMP"
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 110,
+        "frame": 1,
+        "op": "0xf02f",
+        "args": "JOHNWALK.BMP"
+      }
+    ],
+    "0xa601": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 78,
+        "frame": 2,
+        "op": "0xa601",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 108,
+        "frame": 3,
+        "op": "0xa601",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 134,
+        "frame": 4,
+        "op": "0xa601",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 160,
+        "frame": 5,
+        "op": "0xa601",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 196,
+        "frame": 7,
+        "op": "0xa601",
+        "args": [
+          0
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 226,
+        "frame": 8,
+        "op": "0xa601",
+        "args": [
+          0
+        ]
+      }
+    ],
+    "0xa504": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 82,
+        "frame": 2,
+        "op": "0xa504",
+        "args": [
+          314,
+          296,
+          0,
+          2
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 92,
+        "frame": 2,
+        "op": "0xa504",
+        "args": [
+          322,
+          282,
+          1,
+          2
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 112,
+        "frame": 3,
+        "op": "0xa504",
+        "args": [
+          314,
+          296,
+          0,
+          2
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 122,
+        "frame": 3,
+        "op": "0xa504",
+        "args": [
+          322,
+          284,
+          2,
+          2
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 138,
+        "frame": 4,
+        "op": "0xa504",
+        "args": [
+          314,
+          296,
+          0,
+          2
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 148,
+        "frame": 4,
+        "op": "0xa504",
+        "args": [
+          322,
+          284,
+          3,
+          2
+        ]
+      }
+    ],
+    "0x1021": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 102,
+        "frame": 2,
+        "op": "0x1021",
+        "args": [
+          7
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 220,
+        "frame": 7,
+        "op": "0x1021",
+        "args": [
+          7
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 334,
+        "frame": 11,
+        "op": "0x1021",
+        "args": [
+          7
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 448,
+        "frame": 15,
+        "op": "0x1021",
+        "args": [
+          7
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 562,
+        "frame": 19,
+        "op": "0x1021",
+        "args": [
+          7
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 700,
+        "frame": 24,
+        "op": "0x1021",
+        "args": [
+          7
+        ]
+      }
+    ],
+    "0x0110": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 302,
+        "frame": 10,
+        "op": "0x0110",
+        "args": []
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 416,
+        "frame": 14,
+        "op": "0x0110",
+        "args": []
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 530,
+        "frame": 18,
+        "op": "0x0110",
+        "args": []
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 644,
+        "frame": 22,
+        "op": "0x0110",
+        "args": []
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 772,
+        "frame": 27,
+        "op": "0x0110",
+        "args": []
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 830,
+        "frame": 29,
+        "op": "0x0110",
+        "args": []
+      }
+    ],
+    "0x1201": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 756,
+        "frame": 26,
+        "op": "0x1201",
+        "args": [
+          7
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 892,
+        "frame": 31,
+        "op": "0x1201",
+        "args": [
+          9
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 804,
+        "frame": 36,
+        "op": "0x1201",
+        "args": [
+          58
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 1482,
+        "frame": 71,
+        "op": "0x1201",
+        "args": [
+          8
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 1976,
+        "frame": 75,
+        "op": "0x1201",
+        "args": [
+          9
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 7894,
+        "frame": 237,
+        "op": "0x1201",
+        "args": [
+          61
+        ]
+      }
+    ],
+    "0x2022": [
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 766,
+        "frame": 27,
+        "op": "0x2022",
+        "args": [
+          45,
+          120
+        ]
+      },
+      {
+        "file": "FIRE.TTM.TT3",
+        "offset": 902,
+        "frame": 32,
+        "op": "0x2022",
+        "args": [
+          120,
+          240
+        ]
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 2268,
+        "frame": 70,
+        "op": "0x2022",
+        "args": [
+          120,
+          300
+        ]
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 2862,
+        "frame": 89,
+        "op": "0x2022",
+        "args": [
+          120,
+          300
+        ]
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 3442,
+        "frame": 108,
+        "op": "0x2022",
+        "args": [
+          120,
+          300
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 818,
+        "frame": 37,
+        "op": "0x2022",
+        "args": [
+          300,
+          600
+        ]
+      }
+    ],
+    "0x2012": [
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 76,
+        "frame": 1,
+        "op": "0x2012",
+        "args": [
+          0,
+          0
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 100,
+        "frame": 1,
+        "op": "0x2012",
+        "args": [
+          0,
+          0
+        ]
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 56,
+        "frame": 1,
+        "op": "0x2012",
+        "args": [
+          0,
+          0
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 3628,
+        "frame": 142,
+        "op": "0x2012",
+        "args": [
+          0,
+          0
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 3972,
+        "frame": 155,
+        "op": "0x2012",
+        "args": [
+          0,
+          0
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 3034,
+        "frame": 61,
+        "op": "0x2012",
+        "args": [
+          0,
+          0
+        ]
+      }
+    ],
+    "0x4004": [
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 358,
+        "frame": 9,
+        "op": "0x4004",
+        "args": [
+          176,
+          169,
+          639,
+          349
+        ]
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 1566,
+        "frame": 41,
+        "op": "0x4004",
+        "args": [
+          399,
+          162,
+          639,
+          328
+        ]
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 770,
+        "frame": 28,
+        "op": "0x4004",
+        "args": [
+          423,
+          148,
+          500,
+          349
+        ]
+      },
+      {
+        "file": "GJDIVE.TTM.TT3",
+        "offset": 1378,
+        "frame": 46,
+        "op": "0x4004",
+        "args": [
+          0,
+          0,
+          639,
+          349
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 2260,
+        "frame": 39,
+        "op": "0x4004",
+        "args": [
+          0,
+          0,
+          459,
+          349
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 2312,
+        "frame": 41,
+        "op": "0x4004",
+        "args": [
+          0,
+          9,
+          639,
+          349
+        ]
+      }
+    ],
+    "0xa524": [
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 552,
+        "frame": 13,
+        "op": "0xa524",
+        "args": [
+          480,
+          221,
+          29,
+          1
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 598,
+        "frame": 14,
+        "op": "0xa524",
+        "args": [
+          483,
+          220,
+          24,
+          1
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 644,
+        "frame": 15,
+        "op": "0xa524",
+        "args": [
+          485,
+          225,
+          25,
+          1
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 690,
+        "frame": 16,
+        "op": "0xa524",
+        "args": [
+          494,
+          227,
+          26,
+          1
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 736,
+        "frame": 17,
+        "op": "0xa524",
+        "args": [
+          503,
+          229,
+          27,
+          1
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 772,
+        "frame": 18,
+        "op": "0xa524",
+        "args": [
+          508,
+          231,
+          28,
+          1
+        ]
+      }
+    ],
+    "0x2002": [
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 890,
+        "frame": 21,
+        "op": "0x2002",
+        "args": [
+          7,
+          7
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 926,
+        "frame": 22,
+        "op": "0x2002",
+        "args": [
+          7,
+          7
+        ]
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 136,
+        "frame": 1,
+        "op": "0x2002",
+        "args": [
+          7,
+          7
+        ]
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 182,
+        "frame": 2,
+        "op": "0x2002",
+        "args": [
+          7,
+          7
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 7476,
+        "frame": 234,
+        "op": "0x2002",
+        "args": [
+          14,
+          15
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 7932,
+        "frame": 239,
+        "op": "0x2002",
+        "args": [
+          14,
+          14
+        ]
+      }
+    ],
+    "0xa0a4": [
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 896,
+        "frame": 21,
+        "op": "0xa0a4",
+        "args": [
+          611,
+          247,
+          611,
+          294
+        ]
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 932,
+        "frame": 22,
+        "op": "0xa0a4",
+        "args": [
+          611,
+          247,
+          611,
+          294
+        ]
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 162,
+        "frame": 1,
+        "op": "0xa0a4",
+        "args": [
+          248,
+          245,
+          104,
+          308
+        ]
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 208,
+        "frame": 2,
+        "op": "0xa0a4",
+        "args": [
+          248,
+          245,
+          104,
+          308
+        ]
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 254,
+        "frame": 3,
+        "op": "0xa0a4",
+        "args": [
+          267,
+          198,
+          186,
+          225
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 1856,
+        "frame": 75,
+        "op": "0xa0a4",
+        "args": [
+          359,
+          147,
+          359,
+          175
+        ]
+      }
+    ],
+    "0x0080": [
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 946,
+        "frame": 22,
+        "op": "0x0080",
+        "args": []
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 952,
+        "frame": 22,
+        "op": "0x0080",
+        "args": []
+      },
+      {
+        "file": "FISHWALK.TTM.TT3",
+        "offset": 958,
+        "frame": 22,
+        "op": "0x0080",
+        "args": []
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 1514,
+        "frame": 47,
+        "op": "0x0080",
+        "args": []
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 1988,
+        "frame": 61,
+        "op": "0x0080",
+        "args": []
+      },
+      {
+        "file": "GJCATCH2.TTM.TT3",
+        "offset": 1994,
+        "frame": 61,
+        "op": "0x0080",
+        "args": []
+      }
+    ],
+    "0xc051": [
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 110,
+        "frame": 1,
+        "op": "0xc051",
+        "args": [
+          16
+        ]
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 230,
+        "frame": 3,
+        "op": "0xc051",
+        "args": [
+          5
+        ]
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 568,
+        "frame": 12,
+        "op": "0xc051",
+        "args": [
+          16
+        ]
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 910,
+        "frame": 30,
+        "op": "0xc051",
+        "args": [
+          15
+        ]
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 1122,
+        "frame": 33,
+        "op": "0xc051",
+        "args": [
+          23
+        ]
+      },
+      {
+        "file": "GFFFOOD.TTM.TT3",
+        "offset": 1274,
+        "frame": 38,
+        "op": "0xc051",
+        "args": [
+          1
+        ]
+      }
+    ],
+    "0xa054": [
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 3570,
+        "frame": 142,
+        "op": "0xa054",
+        "args": [
+          194,
+          123,
+          175,
+          142
+        ]
+      }
+    ],
+    "0xb606": [
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 3580,
+        "frame": 142,
+        "op": "0xb606",
+        "args": [
+          149,
+          111,
+          242,
+          171,
+          2,
+          1
+        ]
+      },
+      {
+        "file": "MJSAND.TTM.TT3",
+        "offset": 1302,
+        "frame": 50,
+        "op": "0xb606",
+        "args": [
+          286,
+          249,
+          93,
+          71,
+          2,
+          1
+        ]
+      },
+      {
+        "file": "MJSAND.TTM.TT3",
+        "offset": 5452,
+        "frame": 192,
+        "op": "0xb606",
+        "args": [
+          171,
+          121,
+          206,
+          145,
+          2,
+          1
+        ]
+      },
+      {
+        "file": "MJSAND.TTM.TT3",
+        "offset": 5686,
+        "frame": 198,
+        "op": "0xb606",
+        "args": [
+          214,
+          287,
+          125,
+          80,
+          2,
+          1
+        ]
+      },
+      {
+        "file": "SASKDATE.TTM.TT3",
+        "offset": 5956,
+        "frame": 212,
+        "op": "0xb606",
+        "args": [
+          338,
+          232,
+          99,
+          96,
+          2,
+          1
+        ]
+      },
+      {
+        "file": "SBREAKUP.TTM.TT3",
+        "offset": 42,
+        "frame": 1,
+        "op": "0xb606",
+        "args": [
+          500,
+          258,
+          140,
+          50,
+          2,
+          1
+        ]
+      }
+    ],
+    "0x4204": [
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 3604,
+        "frame": 142,
+        "op": "0x4204",
+        "args": [
+          176,
+          120,
+          192,
+          144
+        ]
+      },
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 12178,
+        "frame": 321,
+        "op": "0x4204",
+        "args": [
+          194,
+          123,
+          175,
+          142
+        ]
+      },
+      {
+        "file": "GJVIS6.TTM.TT3",
+        "offset": 2418,
+        "frame": 128,
+        "op": "0x4204",
+        "args": [
+          -2,
+          43,
+          17,
+          302
+        ]
+      },
+      {
+        "file": "GJVIS6.TTM.TT3",
+        "offset": 2470,
+        "frame": 129,
+        "op": "0x4204",
+        "args": [
+          15,
+          43,
+          24,
+          302
+        ]
+      },
+      {
+        "file": "GJVIS6.TTM.TT3",
+        "offset": 2522,
+        "frame": 130,
+        "op": "0x4204",
+        "args": [
+          39,
+          43,
+          24,
+          302
+        ]
+      },
+      {
+        "file": "GJVIS6.TTM.TT3",
+        "offset": 2574,
+        "frame": 131,
+        "op": "0x4204",
+        "args": [
+          63,
+          43,
+          24,
+          302
+        ]
+      }
+    ],
+    "0xa064": [
+      {
+        "file": "GJGULIVR.TTM.TT3",
+        "offset": 12168,
+        "frame": 321,
+        "op": "0xa064",
+        "args": [
+          194,
+          123,
+          175,
+          142
+        ]
+      }
+    ],
+    "0xa404": [
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 588,
+        "frame": 22,
+        "op": "0xa404",
+        "args": [
+          399,
+          203,
+          6,
+          6
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 614,
+        "frame": 23,
+        "op": "0xa404",
+        "args": [
+          399,
+          203,
+          6,
+          6
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 624,
+        "frame": 23,
+        "op": "0xa404",
+        "args": [
+          385,
+          187,
+          12,
+          12
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 650,
+        "frame": 24,
+        "op": "0xa404",
+        "args": [
+          399,
+          203,
+          6,
+          6
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 660,
+        "frame": 24,
+        "op": "0xa404",
+        "args": [
+          385,
+          187,
+          12,
+          12
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 670,
+        "frame": 24,
+        "op": "0xa404",
+        "args": [
+          368,
+          163,
+          18,
+          18
+        ]
+      }
+    ],
+    "0xa104": [
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 824,
+        "frame": 25,
+        "op": "0xa104",
+        "args": [
+          326,
+          110,
+          52,
+          36
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 834,
+        "frame": 25,
+        "op": "0xa104",
+        "args": [
+          316,
+          118,
+          65,
+          16
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 844,
+        "frame": 25,
+        "op": "0xa104",
+        "args": [
+          345,
+          107,
+          25,
+          8
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 854,
+        "frame": 25,
+        "op": "0xa104",
+        "args": [
+          356,
+          144,
+          9,
+          5
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 1282,
+        "frame": 26,
+        "op": "0xa104",
+        "args": [
+          326,
+          110,
+          52,
+          36
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 1292,
+        "frame": 26,
+        "op": "0xa104",
+        "args": [
+          316,
+          118,
+          65,
+          16
+        ]
+      }
+    ],
+    "0xa002": [
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 4050,
+        "frame": 102,
+        "op": "0xa002",
+        "args": [
+          441,
+          91
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 4106,
+        "frame": 103,
+        "op": "0xa002",
+        "args": [
+          441,
+          97
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 4158,
+        "frame": 104,
+        "op": "0xa002",
+        "args": [
+          441,
+          104
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 4210,
+        "frame": 105,
+        "op": "0xa002",
+        "args": [
+          441,
+          111
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 4262,
+        "frame": 106,
+        "op": "0xa002",
+        "args": [
+          441,
+          118
+        ]
+      },
+      {
+        "file": "GJNAT1.TTM.TT3",
+        "offset": 4320,
+        "frame": 107,
+        "op": "0xa002",
+        "args": [
+          441,
+          125
+        ]
+      }
+    ],
+    "0x1101": [
+      {
+        "file": "SASKDATE.TTM.TT3",
+        "offset": 946,
+        "frame": 48,
+        "op": "0x1101",
+        "args": [
+          146
+        ]
+      },
+      {
+        "file": "SASKDATE.TTM.TT3",
+        "offset": 2866,
+        "frame": 129,
+        "op": "0x1101",
+        "args": [
+          129
+        ]
+      },
+      {
+        "file": "SASKDATE.TTM.TT3",
+        "offset": 3010,
+        "frame": 134,
+        "op": "0x1101",
+        "args": [
+          151
+        ]
+      },
+      {
+        "file": "SASKDATE.TTM.TT3",
+        "offset": 4592,
+        "frame": 184,
+        "op": "0x1101",
+        "args": [
+          133
+        ]
+      },
+      {
+        "file": "SASKDATE.TTM.TT3",
+        "offset": 5792,
+        "frame": 205,
+        "op": "0x1101",
+        "args": [
+          140
+        ]
+      }
+    ]
+  }
+}

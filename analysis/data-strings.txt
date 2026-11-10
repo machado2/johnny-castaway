@@ -1,0 +1,117 @@
+0029: Borland C++ - Copyright 1991 Borland Intl.
+0058: ScreenSaverConfigure
+006d: ScreenSaverConfigure
+0082: Screen Antics
+0090: ScreenSaver.ScreenAntics
+00a9: SCRANTIC.INI
+00cc: ChangePassword
+00db: SourceDir
+00e5: Background
+00f0: Clouds
+00f7: Waves
+00fd: Sounds
+0104: Password
+010d: NumDays
+0115: Introduction
+0122: CurrentYear
+012e: CurrentMonth
+013b: CurrentDay
+0146: StartTime
+0153: Background
+0161: Clouds
+016b: Waves
+0174: Sounds
+017b: Password
+0187: NumDays
+0192: Introduction
+01a2: CurrentYear
+01b1: CurrentMonth
+01c1: CurrentDay
+01cf: StartTime
+01d9: Insufficent memory (%lu).  Program aborted.
+0206: Insufficent memory (%lu).  Bitmaps won't be flipped.
+023c: %2d:%02d %cm
+024a: JOHNCAST.PAL
+0257: INTRO.SCR
+028c: OCEAN00.SCR
+0298: OCEAN01.SCR
+02a4: OCEAN02.SCR
+02b0: HOLIDAY.BMP
+02bc: BACKGRND.BMP
+02c9: MRAFT.BMP
+02d3: NIGHT.SCR
+0354: !JOHNWALK.BMP
+1662: New Scene
+1681: ACTIVITY.ADS
+1692: BUILDING.ADS
+16a3: FISHING.ADS
+16b4: JOHNNY.ADS
+16c5: MARY.ADS
+16d6: MISCGAG.ADS
+16e7: STAND.ADS
+16f8: SUZY.ADS
+1709: VISITOR.ADS
+171a: WALKSTUF.ADS
+173a: Unable to load ADS file %s
+1cbc: RESOURCE.MAP
+1cd4: Screen Antics
+1d09: iDl'
+1d51: .Rc-
+1d56: WAVESFX%d
+1d60: WAVE
+1d66: Dynamix, JTP - Jeff Tunnell Productions
+1d8e: PasswordProtection
+1e28: WILLY.FON
+1e32: Willy Beamish Dialog
+1e48: BMP:INF:
+1e51: BMP:BIN:
+1e5c: BMP:VGA:
+1e65: BMP:AMG:
+1e70: SCR:DIM:
+1e79: SCR:BIN:
+1e84: SCR:VGA:
+1e8d: SCR:AMG:
+25b8:  $(,048<@DHLPTX\`dhlptx|
+25f2: PAL:VGA:
+25fc: BMP:MTX:
+260d:  ADS:RES:
+2617: ADS:SCR:
+2622: C&l&
+262d: '9'b'
+2643: 1234567890123456789012345678901234567890
+266c: 1234567890123456789012345678901234567890
+2695: 1234567890123456789012345678901234567890
+26be: 1234567890123456789012345678901234567890
+26e7: 1234567890123456789012345678901234567890
+2710: 1234567890123456789012345678901234567890
+2739: 1234567890123456789012345678901234567890
+2762: 1234567890123456789012345678901234567890
+278b: 1234567890123456789012345678901234567890
+27b4: PAG:
+27b9: TT3:
+27d2: JOHNWALK.BMP
+27df: Unable to load bitmap file %s
+28a9:          !!!!!                  
+28ca: @@@@@@@@@@@@@@@
+28e3: @@@@@@@
+2904: @@@@@@
+2924: @@@@ 
+2b84: .$$$
+2bce: Out of memory in _setargv0
+2c24: Floating Point: Square Root of Negative Number
+2c53: Invalid
+2c5b: DeNormal
+2c64: Divide by Zero
+2c73: Overflow
+2c7c: Underflow
+2c86: Inexact
+2c8e: Unemulated
+2c99: Stack Overflow
+2ca8: Stack Underflow
+2cb8: Exception Raised
+2cc9: Program Aborted
+2cd9: Illegal Instruction
+2ced: Segment Violation
+2cff: Floating Point Trap
+2d13: Program Terminated
+2d26: Abnormal Program Termination

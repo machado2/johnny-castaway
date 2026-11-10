@@ -1,0 +1,10 @@
+{
+  "name": "johnny-castaway-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "extract": "python tools/inspect_original.py && python tools/decode_original.py && python tools/ttm_inspect.py && python tools/story_extract.py && python tools/export_web.py",
+    "test": "node --test tests/*.test.mjs && node tools/ttm_verify.mjs && node tools/ads_verify.mjs && node tools/story_verify.mjs"
+  }
+}
