@@ -231,10 +231,13 @@ export class Director {
     this.gfx.clipRect=previous;
   }
   setupBackground() {
-    this.locateIsland(); const gfx = this.gfx;
+    const gfx = this.gfx;
+    // seg03:01f5 chooses the ocean before 0226/0233 choose variant and origin.
     if (!this.config.background || this.mode === 2) gfx.clear(5,0);
     else gfx.screen(this.mode === 0 && this.slot < 12 ? this.tables.ambience.ocean_files[this.rng.int(3)] : 'NIGHT.SCR',0);
-    this.shorePhases = [2,2,2]; this.shoreDelay = 0;
+    this.locateIsland();
+    // seg03:02bf resets to 2,2,2, then 02d6 advances once before painting.
+    this.shorePhases = [0,2,2]; this.shoreDelay = 4;
     if (this.mode !== 2) {
       this.drawRaft(0);
       for (const layer of this.tables.ambience.background_layers.slice(0,3))
@@ -243,17 +246,23 @@ export class Director {
       for (const layer of this.tables.ambience.background_layers.slice(3)) this.sprite(layer.frame,layer.x,layer.y,0);
     }
     this.wind = this.rng.percent(50) ? -1 : 1;
-    this.clouds = []; this.particles = []; this.waveDelay=0;
+    this.clouds = Array(15).fill(null); this.particles = []; this.waveDelay=0;
     const limits = [8,4,2];
     for (let i=0; i<15; ++i) if (this.rng.percent(30)) {
       let size = [2,1,0][this.rng.percent(5,10,15)-1];
       while (size > 0 && !limits[size]) --size;
       if (size === undefined || !limits[size]) continue;
       --limits[size]; const frame=15+size, im=this.assets.images['BACKGRND.BMP'][frame];
-      this.clouds.push({size,frame,x:this.rng.int(640-im.w),y:1+this.rng.int(139-im.h),delay:6+this.rng.int(5),remaining:this.rng.int(6)});
+      const x=this.rng.int(640-im.w),y=1+this.rng.int(139-im.h),delay=6+this.rng.int(5);
+      this.clouds[i]={size,frame,x,y,delay,remaining:this.rng.int(delay)};
     }
+    gfx.copyRect(0,1,0,0,640,480);
+    // Only the setup caller passes 1 to seg03:040e (03af); normal scene
+    // updates pass 0 (seg04:070b). Clouds are committed to the background.
+    this.ambience(true);
     this.drawHoliday(0);
-    gfx.copyRect(0,1,0,0,640,480); gfx.copyRect(0,2,0,0,640,480);
+    this.drawHoliday(1);
+    gfx.copyRect(1,2,0,0,640,480);
   }
   drawRaft(target=1) {
     if (!this.hideRaft && this.mode!==2) {
@@ -271,22 +280,30 @@ export class Director {
     const waves=this.variant ? [[30,234,323,0],[33,368,356,1],[36,559,323,2],[39,130,340,0]] : [[3,271,306,0],[6,365,319,1],[9,519,303,2]];
     for (const [base,x,y,phase] of waves) this.sprite(base+this.shorePhases[phase],x,y,target);
   }
-  animateClouds() {
+  updateClouds() {
     if (!this.config.clouds) return;
-    const counts = [0,0,0]; for (const c of this.clouds) ++counts[c.size];
-    for (let i=this.clouds.length; i<15; ++i) {
+    const counts = [0,0,0]; for (const c of this.clouds) if(c)++counts[c.size];
+    for (let i=0; i<15; ++i) if(!this.clouds[i]) {
       const size=[2,1,0][this.rng.percent(20,30,50)-1];
       if (size === undefined || counts[size] >= [8,4,2][size]) continue;
       ++counts[size]; const frame=15+size, im=this.assets.images['BACKGRND.BMP'][frame];
-      this.clouds.push({size,frame,x:(this.wind===1?-1000:640)+this.rng.int(1000-im.w),y:1+this.rng.int(139-im.h),delay:6+this.rng.int(5),remaining:0});
+      this.clouds[i]={size,frame,x:(this.wind===1?-1000:640)+this.rng.int(1000-im.w),y:1+this.rng.int(139-im.h),delay:6+this.rng.int(5),remaining:0};
     }
-    this.clouds=this.clouds.filter(c => {
+    for(let i=0;i<this.clouds.length;++i) {
+      const c=this.clouds[i];if(!c)continue;
       if (c.remaining-- === 0) { c.x+=this.wind; c.remaining=c.delay; }
       const im=this.assets.images['BACKGRND.BMP'][c.frame];
-      if (this.wind<0 && c.x+im.w<0 || this.wind>0 && c.x>640) return false;
+      if (this.wind<0 && c.x+im.w<0 || this.wind>0 && c.x>640)this.clouds[i]=null;
+    }
+    for(const c of this.clouds) {
+      if(!c)continue;
+      const im=this.assets.images['BACKGRND.BMP'][c.frame];
+      if(c.x+im.w<=0 || c.x>=640)continue;
       this.gfx.sprite('BACKGRND.BMP',c.frame,c.x,c.y,this.wind>0?2:0);
-      this.repairForeground(c.x,c.y,im.w,im.h);return true;
-    });
+      this.repairForeground(c.x,c.y,im.w,im.h);
+      // seg03:0e1e–0e3a queues working-to-background copies for cloud regions.
+      this.gfx.copyRect(1,0,c.x,c.y,im.w,im.h);
+    }
   }
   animateParticles() {
     if (!this.config.waves || this.hideWaves) return;
@@ -322,9 +339,10 @@ export class Director {
       return true;
     });
   }
-  ambience() {
+  ambience(initial=false) {
     if(this.mode===2)return;
-    this.animateParticles(); this.animateClouds();
+    this.animateParticles();
+    if(initial)this.updateClouds();
     if(!this.hideWaves && this.config.waves && !this.shoreDelay){
       const p=this.shorePhases;
       if(p[0]===p[2])++p[0];else if(p[1]!==p[0])++p[1];else ++p[2];
