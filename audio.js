@@ -1,15 +1,28 @@
 // Original WAVESFX resource names are mapped from the executable's NE name table.
 // WinMM sndPlaySound(...,7) permits one asynchronous effect at a time.
 export class OriginalAudio {
-  constructor(sounds) {
+  constructor(sounds={}) {
     this.files=sounds;this.bank=new Map();this.context=null;this.source=null;
     this.enabled=true;this.loading=null;
   }
   async unlock() {
-    if(!this.context)this.context=new AudioContext();
-    await this.context.resume();
+    if(!this.context) {
+      const AudioContext=globalThis.AudioContext||globalThis.webkitAudioContext;
+      this.context=new AudioContext();
+    }
+    // Resume directly in the gesture handler, before any network/decode awaits.
+    await Promise.all([this.resume(),this.load()]);
+  }
+  async resume() {
+    if(this.context && this.context.state!=='running')await this.context.resume();
+  }
+  async load(sounds=this.files) {
+    this.files=sounds;
+    // The first tap can arrive before the animation's manifest has loaded.
+    if(!this.context)return;
     if(!this.loading) {
       const missing=Object.entries(this.files).filter(([id])=>!this.bank.has(Number(id)));
+      if(!missing.length)return;
       // Keep concurrent gestures on one attempt until every pending file settles.
       // A later gesture retries only failures, including fetch and decode errors.
       this.loading=Promise.allSettled(missing.map(async([id,file])=>{
@@ -19,7 +32,7 @@ export class OriginalAudio {
       })).then(results=>{
         const failure=results.find(result=>result.status==='rejected');
         if(failure)throw failure.reason;
-      }).catch(error=>{this.loading=null;throw error;});
+      }).finally(()=>{this.loading=null;});
     }
     await this.loading;
   }

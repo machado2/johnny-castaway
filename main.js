@@ -1,6 +1,6 @@
 import {Graphics,WIDTH,HEIGHT} from './graphics.js';
 import {Director} from './story.js';
-import {OriginalAudio} from './audio.js';
+import {OriginalAudio} from './audio.js?v=mobile-audio-1';
 
 const canvas=document.querySelector('canvas');
 const context=canvas.getContext('2d',{alpha:false});
@@ -8,7 +8,8 @@ const stage=document.createElement('canvas');stage.width=WIDTH;stage.height=HEIG
 const stageContext=stage.getContext('2d',{alpha:false});
 const frame=stageContext.createImageData(WIDTH,HEIGHT);
 const STORAGE_KEY='scrantic.web.original.v1';
-let director,gfx,audio,lastTime=0,elapsed=0,nextTick=16,nextStep=55;
+const audio=new OriginalAudio();
+let director,gfx,lastTime=0,elapsed=0,nextTick=16,nextStep=55;
 let lastSaved='',lastSaveAt=0,stopped=false,ready=false;
 
 function resize(){
@@ -51,16 +52,21 @@ function loop(time){
 }
 
 addEventListener('resize',resize);
-addEventListener('pagehide',()=>{save();audio?.stop();});
+addEventListener('pagehide',()=>{save();audio.stop();});
 document.addEventListener('visibilitychange',()=>{
-  if(document.hidden){save();audio?.stop();}
+  if(document.hidden){save();audio.stop();}
+  else audio.resume().catch(reportAudioError);
   lastTime=0;
 });
-async function unlockAudio(){
-  try{await audio?.unlock();}catch(error){console.error('Original audio:',error);}
+function reportAudioError(error){console.error('Original audio:',error);}
+function unlockAudio(){
+  audio.unlock().catch(reportAudioError);
 }
-canvas.addEventListener('pointerdown',unlockAudio);
-canvas.addEventListener('keydown',unlockAudio);
+// Touch/pen activation happens on release; pointerdown only activates a mouse.
+// Keep click/touchend for mobile Safari and keyboard activation for desktop.
+for(const event of ['pointerup','touchend','click','keydown']) {
+  canvas.addEventListener(event,unlockAudio,{passive:true});
+}
 resize();
 
 try{
@@ -75,7 +81,8 @@ try{
   const assets=await dataResponse.json();assets.story=await storyResponse.json();
   assets.pixels=new Uint8Array(await new Response(pixelResponse.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());
   let config={};try{config=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');}catch{}
-  gfx=new Graphics(assets);audio=new OriginalAudio(assets.sounds);
+  audio.load(assets.sounds).catch(reportAudioError);
+  gfx=new Graphics(assets);
   gfx.screen('INTRO.SCR',2);ready=true;present();
   director=new Director(assets,gfx,config,Date.now());
   canvas.dataset.ready='true';
