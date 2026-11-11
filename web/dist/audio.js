@@ -8,11 +8,19 @@ export class OriginalAudio {
   async unlock() {
     if(!this.context)this.context=new AudioContext();
     await this.context.resume();
-    if(!this.loading)this.loading=Promise.all(Object.entries(this.files).map(async([id,file])=>{
-      const response=await fetch(new URL('./assets/'+file,import.meta.url));
-      if(!response.ok)throw new Error('Missing original sound '+id);
-      this.bank.set(Number(id),await this.context.decodeAudioData(await response.arrayBuffer()));
-    }));
+    if(!this.loading) {
+      const missing=Object.entries(this.files).filter(([id])=>!this.bank.has(Number(id)));
+      // Keep concurrent gestures on one attempt until every pending file settles.
+      // A later gesture retries only failures, including fetch and decode errors.
+      this.loading=Promise.allSettled(missing.map(async([id,file])=>{
+        const response=await fetch(new URL('./assets/'+file,import.meta.url));
+        if(!response.ok)throw new Error('Missing original sound '+id);
+        this.bank.set(Number(id),await this.context.decodeAudioData(await response.arrayBuffer()));
+      })).then(results=>{
+        const failure=results.find(result=>result.status==='rejected');
+        if(failure)throw failure.reason;
+      }).catch(error=>{this.loading=null;throw error;});
+    }
     await this.loading;
   }
   play(id) {

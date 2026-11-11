@@ -201,6 +201,8 @@ the appropriate frame. All are exported in JSON.
 `seg03:0136` loads BACKGRND.BMP and MRAFT.BMP, chooses an ocean screen, computes
 island origin through `seg03:1B00`, and composes static sprites. Ocean screen
 filenames are in `DS:0262`: OCEAN00.SCR, OCEAN01.SCR, OCEAN02.SCR.
+The random-call order is ocean (`01F5`), variant (`0226`), then origin (`0233`).
+Night, disabled backgrounds and fullscreen mode do not consume the ocean draw.
 
 Normal variant 0: choose island reference x=67+random()%226,
 y=255+random()%129. Variant 1: x=168+random()%111, y=255+random()%59.
@@ -230,7 +232,10 @@ or (530,281) variant1 plus origin; hidden for flag0x4000 (`seg03:1D69`).
 
 Shore waves `seg03:0E74` use three phase counters `DS:0282/84/86` starting
 at 2,2,2. Every four clock callbacks: if A==C increment A, else if B!=A
-increment B, else increment C; wrap each >2 to zero. Render original BMP frames:
+increment B, else increment C; wrap each >2 to zero.
+Setup calls this routine immediately (`02D6`) with a zero cooldown, so its
+first painted phases are 0,2,2 with the cooldown reset to four.
+Render original BMP frames:
 
 | Variant | Frame base + phase | x | y | Phase |
 |---|---|---:|---:|---|
@@ -254,10 +259,18 @@ Clouds `seg03:0A38/0B67` are BACKGRND frames 15,16,17, limits 8,4,2, across
 15 slots. Initial occupancy attempt is 30 percent, size probabilities 15/10/5
 percent (code call argument order yields large 5,medium10,small15). Initial
 position fits within x=0..640 and y=1..140 using `seg03:14BF`, subtracting sprite
-dimensions. Wind direction is randomly +/-1. Each cloud moves one x pixel
-after a randomly chosen delay 6–10 update calls. At respawn, size weights are
+dimensions. Wind direction is randomly +/-1. The initial countdown is
+`random() % delay`, where delay is 6–10 (`0B2B–0B47`). Within the cloud update
+routine, each cloud moves one x pixel after that countdown. At respawn, size weights are
 small50/medium30/large20; clouds enter from an off-screen region of width1000.
 Rightward clouds are horizontally flipped (`seg03:0DDD`).
+Crucially, the only caller of `0B67` is `040E`, guarded by a nonzero argument
+(`0434–043A`). Setup passes one (`03AF–03B5`); normal scene updates pass zero
+(`seg04:070B–070E`). Thus this executable updates clouds only during setup,
+not on every animation frame. It queues working-to-background copies of cloud
+rectangles (`0E1E–0E3A`) so they persist without ongoing draws or RNG calls.
+The web director retains the fifteen slot positions, performs this setup pass
+after the particle pass, and commits the repaired cloud rectangles to background.
 `seg03:1551` repairs the static island and palm foreground clipped to the bounds
 of an ambient sprite. Native JOHNWALK drawings call the same routine with the
 ambient flag clear: if their bottom is above originY+293, only the palm trunk

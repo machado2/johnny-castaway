@@ -30,28 +30,28 @@
       "index": 4,
       "ads": "BUILDING.ADS",
       "sequence": 2,
-      "frames": 708,
+      "frames": 722,
       "originalInvalidDraws": []
     },
     {
       "index": 5,
       "ads": "VISITOR.ADS",
       "sequence": 4,
-      "frames": 132,
+      "frames": 131,
       "originalInvalidDraws": []
     },
     {
       "index": 6,
       "ads": "VISITOR.ADS",
       "sequence": 6,
-      "frames": 547,
+      "frames": 553,
       "originalInvalidDraws": []
     },
     {
       "index": 7,
       "ads": "VISITOR.ADS",
       "sequence": 7,
-      "frames": 449,
+      "frames": 436,
       "originalInvalidDraws": []
     },
     {
@@ -65,7 +65,7 @@
       "index": 9,
       "ads": "MARY.ADS",
       "sequence": 2,
-      "frames": 683,
+      "frames": 674,
       "originalInvalidDraws": []
     },
     {
@@ -81,7 +81,7 @@
       "index": 11,
       "ads": "MARY.ADS",
       "sequence": 1,
-      "frames": 703,
+      "frames": 956,
       "originalInvalidDraws": [
         "SMDATE11.BMP:31",
         "SMDATE11.BMP:30"
@@ -114,84 +114,84 @@
       "index": 15,
       "ads": "ACTIVITY.ADS",
       "sequence": 1,
-      "frames": 1045,
+      "frames": 1101,
       "originalInvalidDraws": []
     },
     {
       "index": 16,
       "ads": "BUILDING.ADS",
       "sequence": 5,
-      "frames": 967,
+      "frames": 1127,
       "originalInvalidDraws": []
     },
     {
       "index": 17,
       "ads": "BUILDING.ADS",
       "sequence": 7,
-      "frames": 1095,
+      "frames": 1086,
       "originalInvalidDraws": []
     },
     {
       "index": 18,
       "ads": "BUILDING.ADS",
       "sequence": 9,
-      "frames": 734,
+      "frames": 1070,
       "originalInvalidDraws": []
     },
     {
       "index": 19,
       "ads": "BUILDING.ADS",
       "sequence": 8,
-      "frames": 1070,
+      "frames": 999,
       "originalInvalidDraws": []
     },
     {
       "index": 20,
       "ads": "FISHING.ADS",
       "sequence": 1,
-      "frames": 791,
+      "frames": 372,
       "originalInvalidDraws": []
     },
     {
       "index": 21,
       "ads": "FISHING.ADS",
       "sequence": 2,
-      "frames": 379,
+      "frames": 432,
       "originalInvalidDraws": []
     },
     {
       "index": 22,
       "ads": "FISHING.ADS",
       "sequence": 7,
-      "frames": 360,
+      "frames": 372,
       "originalInvalidDraws": []
     },
     {
       "index": 23,
       "ads": "FISHING.ADS",
       "sequence": 8,
-      "frames": 337,
+      "frames": 452,
       "originalInvalidDraws": []
     },
     {
       "index": 24,
       "ads": "FISHING.ADS",
       "sequence": 3,
-      "frames": 638,
+      "frames": 603,
       "originalInvalidDraws": []
     },
     {
       "index": 25,
       "ads": "FISHING.ADS",
       "sequence": 6,
-      "frames": 273,
+      "frames": 286,
       "originalInvalidDraws": []
     },
     {
       "index": 26,
       "ads": "FISHING.ADS",
       "sequence": 4,
-      "frames": 270,
+      "frames": 307,
       "originalInvalidDraws": []
     },
     {
@@ -205,7 +205,7 @@
       "index": 28,
       "ads": "JOHNNY.ADS",
       "sequence": 4,
-      "frames": 376,
+      "frames": 415,
       "originalInvalidDraws": []
     },
     {
@@ -219,7 +219,7 @@
       "index": 30,
       "ads": "WALKSTUF.ADS",
       "sequence": 3,
-      "frames": 785,
+      "frames": 774,
       "originalInvalidDraws": []
     },
     {
@@ -233,7 +233,7 @@
       "index": 32,
       "ads": "ACTIVITY.ADS",
       "sequence": 5,
-      "frames": 721,
+      "frames": 687,
       "originalInvalidDraws": [
         "GJNAT1LI.BMP:19",
         "GJNAT1.BMP:27"
@@ -243,266 +243,266 @@
       "index": 33,
       "ads": "MISCGAG.ADS",
       "sequence": 1,
-      "frames": 307,
+      "frames": 278,
       "originalInvalidDraws": []
     },
     {
       "index": 34,
       "ads": "ACTIVITY.ADS",
       "sequence": 7,
-      "frames": 307,
+      "frames": 317,
       "originalInvalidDraws": []
     },
     {
       "index": 35,
       "ads": "ACTIVITY.ADS",
       "sequence": 6,
-      "frames": 256,
+      "frames": 577,
       "originalInvalidDraws": []
     },
     {
       "index": 36,
       "ads": "ACTIVITY.ADS",
       "sequence": 10,
-      "frames": 592,
+      "frames": 607,
       "originalInvalidDraws": []
     },
     {
       "index": 37,
       "ads": "ACTIVITY.ADS",
       "sequence": 11,
-      "frames": 506,
+      "frames": 527,
       "originalInvalidDraws": []
     },
     {
       "index": 38,
       "ads": "ACTIVITY.ADS",
       "sequence": 12,
-      "frames": 480,
+      "frames": 501,
       "originalInvalidDraws": []
     },
     {
       "index": 39,
       "ads": "STAND.ADS",
       "sequence": 1,
-      "frames": 517,
+      "frames": 1162,
       "originalInvalidDraws": []
     },
     {
       "index": 40,
       "ads": "STAND.ADS",
       "sequence": 2,
-      "frames": 67,
+      "frames": 1293,
       "originalInvalidDraws": []
     },
     {
       "index": 41,
       "ads": "STAND.ADS",
       "sequence": 3,
-      "frames": 63,
+      "frames": 404,
       "originalInvalidDraws": []
     },
     {
       "index": 42,
       "ads": "STAND.ADS",
       "sequence": 4,
-      "frames": 182,
+      "frames": 403,
       "originalInvalidDraws": []
     },
     {
       "index": 43,
       "ads": "STAND.ADS",
       "sequence": 5,
-      "frames": 293,
+      "frames": 135,
       "originalInvalidDraws": []
     },
     {
       "index": 44,
       "ads": "STAND.ADS",
       "sequence": 6,
-      "frames": 60,
+      "frames": 751,
       "originalInvalidDraws": []
     },
     {
       "index": 45,
       "ads": "STAND.ADS",
       "sequence": 7,
-      "frames": 116,
+      "frames": 341,
       "originalInvalidDraws": []
     },
     {
       "index": 46,
       "ads": "STAND.ADS",
       "sequence": 8,
-      "frames": 62,
+      "frames": 316,
       "originalInvalidDraws": []
     },
     {
       "index": 47,
       "ads": "STAND.ADS",
       "sequence": 9,
-      "frames": 797,
+      "frames": 280,
       "originalInvalidDraws": []
     },
     {
       "index": 48,
       "ads": "STAND.ADS",
       "sequence": 10,
-      "frames": 1183,
+      "frames": 49,
       "originalInvalidDraws": []
     },
     {
       "index": 49,
       "ads": "STAND.ADS",
       "sequence": 11,
-      "frames": 203,
+      "frames": 232,
       "originalInvalidDraws": []
     },
     {
       "index": 50,
       "ads": "STAND.ADS",
       "sequence": 12,
-      "frames": 2,
+      "frames": 254,
       "originalInvalidDraws": []
     },
     {
       "index": 51,
       "ads": "BUILDING.ADS",
       "sequence": 3,
-      "frames": 899,
+      "frames": 545,
       "originalInvalidDraws": []
     },
     {
       "index": 52,
       "ads": "BUILDING.ADS",
       "sequence": 4,
-      "frames": 948,
+      "frames": 846,
       "originalInvalidDraws": []
     },
     {
       "index": 53,
       "ads": "BUILDING.ADS",
       "sequence": 6,
-      "frames": 834,
+      "frames": 809,
       "originalInvalidDraws": []
     },
     {
       "index": 54,
       "ads": null,
       "sequence": 1,
-      "frames": 93,
+      "frames": 107,
       "originalInvalidDraws": []
     },
     {
       "index": 55,
       "ads": null,
       "sequence": 1,
-      "frames": 118,
+      "frames": 69,
       "originalInvalidDraws": []
     },
     {
       "index": 56,
       "ads": null,
       "sequence": 1,
-      "frames": 104,
+      "frames": 57,
       "originalInvalidDraws": []
     },
     {
       "index": 57,
       "ads": null,
       "sequence": 1,
-      "frames": 74,
+      "frames": 96,
       "originalInvalidDraws": []
     },
     {
       "index": 58,
       "ads": null,
       "sequence": 1,
-      "frames": 75,
+      "frames": 105,
       "originalInvalidDraws": []
     },
     {
       "index": 59,
       "ads": null,
       "sequence": 1,
-      "frames": 98,
+      "frames": 80,
       "originalInvalidDraws": []
     },
     {
       "index": 60,
       "ads": null,
       "sequence": 1,
-      "frames": 73,
+      "frames": 69,
       "originalInvalidDraws": []
     },
     {
       "index": 61,
       "ads": null,
       "sequence": 1,
-      "frames": 65,
+      "frames": 78,
       "originalInvalidDraws": []
     },
     {
       "index": 62,
       "ads": null,
       "sequence": 1,
-      "frames": 106,
+      "frames": 58,
       "originalInvalidDraws": []
     },
     {
       "index": 63,
       "ads": null,
       "sequence": 1,
-      "frames": 112,
+      "frames": 71,
       "originalInvalidDraws": []
     },
     {
       "index": 64,
       "ads": null,
       "sequence": 1,
-      "frames": 98,
+      "frames": 58,
       "originalInvalidDraws": []
     },
     {
       "index": 65,
       "ads": null,
       "sequence": 1,
-      "frames": 67,
+      "frames": 108,
       "originalInvalidDraws": []
     },
     {
       "index": 66,
       "ads": null,
       "sequence": 1,
-      "frames": 110,
+      "frames": 72,
       "originalInvalidDraws": []
     },
     {
       "index": 67,
       "ads": null,
       "sequence": 1,
-      "frames": 86,
+      "frames": 123,
       "originalInvalidDraws": []
     },
     {
       "index": 68,
       "ads": "JOHNNY.ADS",
       "sequence": 2,
-      "frames": 511,
+      "frames": 502,
       "originalInvalidDraws": []
     },
     {
       "index": 69,
       "ads": "SUZY.ADS",
       "sequence": 1,
-      "frames": 557,
+      "frames": 559,
       "originalInvalidDraws": []
     },
     {
       "index": 70,
       "ads": "JOHNNY.ADS",
       "sequence": 3,
-      "frames": 349,
+      "frames": 337,
       "originalInvalidDraws": []
     },
     {
@@ -516,7 +516,7 @@
       "index": 72,
       "ads": "JOHNNY.ADS",
       "sequence": 6,
-      "frames": 406,
+      "frames": 349,
       "originalInvalidDraws": []
     },
     {
@@ -530,14 +530,14 @@
       "index": 74,
       "ads": "STAND.ADS",
       "sequence": 15,
-      "frames": 182,
+      "frames": 123,
       "originalInvalidDraws": []
     },
     {
       "index": 75,
       "ads": "STAND.ADS",
       "sequence": 16,
-      "frames": 63,
+      "frames": 70,
       "originalInvalidDraws": []
     },
     {
@@ -551,16 +551,14 @@
       "index": 77,
       "ads": "VISITOR.ADS",
       "sequence": 1,
-      "frames": 304,
-      "originalInvalidDraws": [
-        "GJVIS3.BMP:12"
-      ]
+      "frames": 205,
+      "originalInvalidDraws": []
     },
     {
       "index": 78,
       "ads": "WALKSTUF.ADS",
       "sequence": 1,
-      "frames": 553,
+      "frames": 548,
       "originalInvalidDraws": []
     },
     {
@@ -577,9 +575,8 @@
     "SMDATE11.BMP:30",
     "SLEVEJC2.BMP:17",
     "GJNAT1LI.BMP:19",
-    "GJNAT1.BMP:27",
-    "GJVIS3.BMP:12"
+    "GJNAT1.BMP:27"
   ],
   "failures": [],
-  "maxFrames": 1183
+  "maxFrames": 1293
 }
