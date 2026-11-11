@@ -70,3 +70,67 @@ test('repeated audio gestures share pending loads even when one file fails early
   assert.deepEqual([...attempts.values()],[2,1]);
   assert.equal(audio.bank.size,2);
 });
+
+test('a tap during startup unlocks audio before the sound manifest arrives',async t=>{
+  mockAudio(t);
+  const audio=new OriginalAudio();
+  let fetches=0;
+  t.mock.method(globalThis,'fetch',async()=>{fetches++;return response();});
+  await audio.unlock();
+  const context=audio.context;
+  assert.equal(fetches,0);
+  await audio.load({1:'1.wav',2:'2.wav'});
+  assert.strictEqual(audio.context,context,'keep the context authorized by the early tap');
+  assert.equal(audio.bank.size,2,'load sounds without requiring a second tap');
+  await audio.unlock();
+  assert.equal(fetches,2);
+});
+
+test('loading the manifest before a tap leaves audio creation to the gesture',async t=>{
+  mockAudio(t);
+  const audio=new OriginalAudio();
+  t.mock.method(globalThis,'fetch',async()=>response());
+  await audio.load({1:'1.wav'});
+  assert.equal(audio.context,null);
+  await audio.unlock();
+  assert.equal(audio.bank.size,1);
+});
+
+test('each gesture retries resume synchronously while a previous attempt is blocked',async t=>{
+  mockAudio(t);
+  let calls=0,release;
+  const pending=new Promise(resolve=>{release=resolve;});
+  const audio=new OriginalAudio({1:'1.wav'});
+  audio.context=new AudioContext();audio.context.state='suspended';
+  audio.context.resume=()=>{
+    calls++;
+    if(calls===2){audio.context.state='running';release();}
+    return pending;
+  };
+  t.mock.method(globalThis,'fetch',async()=>response());
+  const first=audio.unlock();
+  assert.equal(calls,1,'resume must run before returning from the first gesture');
+  const second=audio.unlock();
+  assert.equal(calls,2,'a blocked attempt must not swallow the next gesture');
+  await Promise.all([first,second]);
+  assert.equal(audio.context.state,'running');
+  assert.equal(audio.bank.size,1);
+});
+
+test('audio resumes after a mobile interruption without reloading the bank',async t=>{
+  mockAudio(t);
+  let fetches=0;
+  t.mock.method(globalThis,'fetch',async()=>{fetches++;return response();});
+  const audio=new OriginalAudio({1:'1.wav'});
+  await audio.unlock();
+  let resumes=0;
+  audio.context.resume=async()=>{resumes++;audio.context.state='running';};
+  for(const state of ['interrupted','suspended']){
+    audio.context.state=state;
+    await audio.resume();
+    assert.equal(audio.context.state,'running');
+  }
+  await audio.resume();
+  assert.equal(resumes,2);
+  assert.equal(fetches,1);
+});

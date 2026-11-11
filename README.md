@@ -8,7 +8,7 @@ Execute `npm start` nesta pasta e abra [http://127.0.0.1:4173](http://127.0.0.1:
 
 Na execução local, o servidor escuta apenas em `127.0.0.1`, e a animação carrega imagens, roteiros e sons da própria pasta, sem depender de internet ou login. A publicação autorizada usa GitHub Pages em [castaway.fbmac.net](https://castaway.fbmac.net).
 
-A animação começa automaticamente. Clique no canvas para liberar os sons, conforme a exigência de reprodução de áudio do navegador. A história fica salva no armazenamento local do navegador. Os quadros usam a resolução original de 640 × 480 e ocupam o maior espaço possível da janela, sem suavização e preservando a proporção de 4:3.
+A animação começa automaticamente. Toque ou clique no canvas uma vez para liberar os sons, conforme a exigência de reprodução de áudio do navegador, inclusive no celular. O toque também funciona durante o carregamento; os efeitos começam quando os arquivos estiverem prontos e a cena solicitar um som. A história fica salva no armazenamento local do navegador. Os quadros usam a resolução original de 640 × 480 e ocupam o maior espaço possível da janela, sem suavização e preservando a proporção de 4:3.
 
 ## O que foi reconstruído
 
